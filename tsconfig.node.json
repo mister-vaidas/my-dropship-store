@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    /* PROJECT-REFERENCE REQUIREMENTS */
+    "composite": true,          
+    "declaration": true,        
+    "emitDeclarationOnly": true,
+
+    /* Your original settings */
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
@@ -11,7 +18,6 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
 
     /* Linting */
     "strict": true,

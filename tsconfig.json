@@ -1,5 +1,10 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",          // ⬅ enable absolute paths
+    "paths": {
+      "@/*": ["src/*"]       // ⬅ map "@/something" → "src/something"
+    }
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
