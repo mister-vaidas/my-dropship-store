@@ -1,5 +1,26 @@
-# Logs
-logs
+########################################
+#  Node & package managers
+########################################
+node_modules/
+.pnpm-store/            
+.pnp.*                  
+package-lock.json       
+yarn.lock               
+
+########################################
+#  Build & cache outputs
+########################################
+dist*/                  
+build/
+.vite/                  
+.cache/
+coverage/               
+turbo/                  
+
+########################################
+#  Logs & diagnostics
+########################################
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +28,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+########################################
+#  Environment secrets
+########################################
+.env                    
+.env.*                  
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+########################################
+#  Editor & OS cruft
+########################################
+.vscode/*               
+!.vscode/extensions.json 
+.idea/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.swp
+*.swo
+*.swn
+
+########################################
+#  Misc
+########################################
+*.local                 
+.eslintcache

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",          // ⬅ enable absolute paths
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]       // ⬅ map "@/something" → "src/something"
+      "@/*": ["src/*"]
     }
   },
   "references": [
